@@ -10,7 +10,7 @@ const List: FC = () => {
           <Link to="/">HTTP 203</Link>
         </header>
       </div>
-      <div className="bg-slate-400">
+      <div className="bg-zinc-300">
         <div>
           <div className="px-5">
             <ol className="mx-auto my-0 mt-5 flex w-fit flex-row flex-wrap justify-center rounded-[19px] bg-white px-1 py-1.5">
@@ -64,9 +64,9 @@ const List: FC = () => {
               </li>
             </ol>
           </div>
-          <ol className="p-4.5 m-0 grid auto-cols-auto grid-flow-row gap-1.5">
+          <ol className="m-0 grid auto-cols-[135px] grid-flow-row auto-rows-max grid-cols-35 gap-4 bg-zinc-300 p-4">
             {ListData.map((item, index) => (
-              <li>
+              <li className="block shadow-md">
                 <Link to="/">
                   <img src={item.img} alt={item.title} />
                 </Link>
